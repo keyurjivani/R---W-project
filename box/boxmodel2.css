@@ -1,0 +1,66 @@
+.d1{
+    border: 2px solid gainsboro;
+    width: 385px;
+    border-radius: 15px;
+}
+img{
+    width: 250px;
+    padding-left: 60px;
+}
+.d2{
+    padding: 10px;
+}
+.s1{
+    padding-left: 10px;
+    color:  palevioletred;
+}
+.s2{
+    padding-left: 10px;
+    color: rgb(31, 130, 56);
+}
+.p1{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.s3{
+    text-align: center;
+    font-size: large;
+}
+.s4{
+    padding-left: 8px;
+    font-size: medium;
+    color: rgb(185, 185, 186);
+    text-decoration: line-through;
+}
+.s5{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: large;
+}
+.s6{
+    border-left: 2px solid rgb(185, 185, 186);
+    padding-left: 8px;
+    font-size: larger;
+    color: rgb(31, 170, 124);
+}
+.d3{
+    text-align: center;
+}
+button{
+    background-color: cyan;
+    font-size: medium;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+.but{
+    text-align: center;
+}
+
+.i1{
+    width: 30px;
+    display: inline;
+    padding-left: 70px;
+}
+

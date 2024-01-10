@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #main {
+            display: flex;
+            margin: 10%;
+        }
+
+        #d1,
+        #d2,
+        #d3,
+        #d4 {
+            border: 2px solid black;
+            margin-left: 60px;
+            height: 250px;
+            width: 250px;
+        }
+
+        #d1:hover {
+            translate: 20px 20px;
+        }
+
+        #d2:hover {
+            transform: skew(20deg, 10deg);
+        }
+
+        #d3:hover {
+            transform: scale(1.2);
+        }
+
+        #d4:hover {
+            transform: rotate(45deg);
+        }
+
+        span {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transform Property</h1>
+        <ol>
+            <li>Translate</li>
+            <li>Skew</li>
+            <li>Scale</li>
+            <li>Rotate</li>
+        </ol>
+    <div id="main">
+        
+        <div id="d1"><img src="./1.jpg" alt="" height="250px" width="250px"><span>
+                <p><b>1.Translate</b></p>
+            </span></div>
+        <div id="d2"><img src="./2.jpeg" alt="" height="250px" width="250px"><span>
+                <p><b> 2.Skew</b></p>
+            </span></div>
+        <div id="d3"><img src="./3.jpeg" alt="" height="250px" width="250px"><span>
+                <p><b>3.Scale </b></p>
+            </span></div>
+        <div id="d4"><img src="./4.jpeg" alt="" height="250px" width="250px"><span>
+                <p><b>4.Rotate </b></p>
+            </span></div>
+    </div>
+</body>
+
+</html>
