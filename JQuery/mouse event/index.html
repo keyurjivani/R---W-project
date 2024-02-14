@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <img id="your-image" src="./i7.png" alt="" height="300px" width="500px"><br><br>
+    <!-- <h1 id="t">hello</h1> -->
+    <button id="btn1">Change</button>
+    <button id="btn2">Hide</button>
+    <button id="btn3">Show</button>
+    <button id="btn4">Toggle</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $("#btn1").click(()=>{
+        $("#your-image").attr("src","./i8.png");
+    });
+
+    $("#btn2").click(() => {
+        $("#your-image").hide();
+    });
+
+    $("#btn3").click(() => {
+        $("#your-image").show();
+    });
+
+    $("#btn4").click(() => {
+        $("#your-image").toggle();
+    });
+
+</script>
+
+</html>
