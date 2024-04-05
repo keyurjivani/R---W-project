@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/live project/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .container-fluid{
+        padding: 0;
+        /* padding-left: 0px; */
+        /* padding-right: 0px; */
+        margin: 0;
+        overflow: hidden;
+    }
+  
+    
+</style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-black d-flex p-2">
+
+            <nav class="col-3  d-flex justify-content-center align-items-center">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNonCVLogoDesktop.86874a45.png&w=256&q=100"
+                    alt="" width="150px" height="20px">
+            </nav>
+
+            <nav class="col-6">
+
+                <div class="input-group">
+                    <input type="text" class="form-control bg-dark" placeholder="Try Liquid Lipstick"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                    <span class="input-group-text " id="basic-addon">
+                        <i class="fa-solid fa-magnifying-glass pe-1"></i>Search
+                    </span>
+                </div>
+
+            </nav>
+
+            <nav class="col-2 text-light d-flex align-items-center justify-content-center" id="login">
+                <i class="fa-solid fa-user text-light fa-xs pe-1"></i> Login/Register
+            </nav>
+
+            <nav class="col-1 d-flex justify-content-center align-items-center" id="icons">
+                <i class="fa-regular fa-heart text-light fa-xs" id="icon"></i>
+                <i class="fa-solid fa-bag-shopping text-light fa-xs" id="icon"></i>
+                <svg width="12px" height="12px" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg" fill="white"
+                    alt="discount_icon">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="m8.744 3.662.832-.803.832.803a3 3 0 0 0 2.504.813l1.146-.162.2 1.134a3 3 0 0 0 1.55 2.132l1.018.54-.505 1.03a3 3 0 0 0 0 2.639l.505 1.031-1.018.54a3 3 0 0 0-1.55 2.131l-.2 1.134-1.146-.162a3 3 0 0 0-2.504.813l-.832.804-.832-.804a3 3 0 0 0-2.504-.813l-1.146.162-.2-1.134a3 3 0 0 0-1.55-2.132l-1.018-.539.505-1.031a3 3 0 0 0 0-2.638l-.505-1.032 1.018-.539a3 3 0 0 0 1.55-2.132l.2-1.134 1.146.162a3 3 0 0 0 2.504-.813ZM8.88.75a1 1 0 0 1 1.39 0l1.527 1.475a1 1 0 0 0 .834.27l2.104-.296a1 1 0 0 1 1.125.817l.366 2.086a1 1 0 0 0 .517.71l1.874.993a1 1 0 0 1 .43 1.324l-.93 1.901a1 1 0 0 0 0 .88l.93 1.9a1 1 0 0 1-.43 1.324l-1.874.993a1 1 0 0 0-.517.71l-.366 2.087a1 1 0 0 1-1.125.817l-2.104-.297a1 1 0 0 0-.834.27l-1.527 1.475a1 1 0 0 1-1.39 0l-1.527-1.474a1 1 0 0 0-.834-.271l-2.104.297a1 1 0 0 1-1.125-.817l-.366-2.087a1 1 0 0 0-.517-.71l-1.874-.993a1 1 0 0 1-.43-1.323l.93-1.902a1 1 0 0 0 0-.879l-.93-1.901a1 1 0 0 1 .43-1.324l1.874-.992a1 1 0 0 0 .517-.711l.366-2.086a1 1 0 0 1 1.125-.817l2.104.297a1 1 0 0 0 .834-.271L8.881.749Zm4.524 7.31a1 1 0 0 0-1.413-1.415l-6.245 6.234a1 1 0 1 0 1.413 1.416l6.245-6.235Zm-4.87-.188A1.56 1.56 0 0 1 6.974 9.43 1.56 1.56 0 1 1 8.535 7.87Zm3.642 6.754a1.56 1.56 0 0 0 1.561-1.559 1.56 1.56 0 0 0-1.56-1.558 1.56 1.56 0 1 0 0 3.117Z">
+                    </path>
+                </svg>
+            </nav>
+
+        </div>
+
+        <nav class="bg-dark d-flex">
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    LIPS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    EYES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    FACE
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    NAILS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    SKINCARE
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    ACCESSORIES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    GIFTING
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    LIBESTSELLERS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn 9btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    NEW LAUNCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    OFFERS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="button">
+                    BLOG
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F5fd85fa9-9569-4baf-b4d5-43dbd899bd06.gif&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F2463947b-abca-4deb-bf6c-3fd9267bb12e.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F941bbe82-9194-4ac9-9f15-1d27780fbc02.gif&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff2f896f0-0134-446d-b9ad-b35d2fe5267d.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+
+
+        <br> <br>
+
+        <div id="background">
+            <div class="d-flex justify-content-center">
+                <div class="border border-danger" id="line"></div>
+                <div class="name text-light fw-bold">
+                    BESTSELLERS
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-light border border-danger box">
+
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F370205924-01_1aef1c2e-8e41-42a2-89c5-70dab3b356ac.jpg%3Fv%3D1698238462&w=256&q=75"
+                        alt="" height="130px" width="90px">
+                    <p class="mt-1">Matte as hell crayon Lipstick Minis Set of 3</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1799</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>799</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+
+                <div class="bg-light border border-danger box">
+
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG2_aed576d3-066c-42e7-b45b-ecdefb75ad5f.jpg%3Fv%3D1708867229&w=256&q=75"
+                        alt="" height="130px" width="90px">
+                    <p class="mt-1">Smudge Me Not Mini Liquid Lipstick Set of 4 - Power Up Your...</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        799
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">999</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>639</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p id="three">Ace Of Face Foundation Stick</p>
+                    <div class="shade1">
+                        <p id="shade">11 shades</p>
+                    </div>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        999
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>799</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE ITEMS</button>
+                    </span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box position absolute">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F521737983-parent-1st-card.jpg%3Fv%3D1690905085&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p id="three">Maximeyes Drama Magnetic Lashes & Eyeliner</p>
+                    <div class="shade2">
+                        <p id="shade">3 shades</p>
+                    </div>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        699
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>559</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    EXCLUSIVE TREATS
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class="mt-3 d-flex justify-content-center  " >
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fbaeeda78-b0fd-4ffd-ac80-a357256dd11f.jpg&w=1920&q=75"
+                    class="d-block rounded" style="width: 95%;"   alt="">
+            </div>
+        </div>
+
+        <br>
+
+        <div id="background">
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name text-light fw-bold">
+                    CURATED KITS FOR YOU
+
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-light border border-danger box">
+
+                    <img class="mt-1"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FVineeta_s-Favourite-Makeup-kit---WBG-images_Cover.jpg%3Fv%3D1676477676&w=256&q=75"
+                        alt="" height="130px" width="90px">
+                    <p class="mt-2">Vineeta's Favourite Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        2999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">3894</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>2399</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="mt-1"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FNude-Edition-Makeup-Kit---WBG_1.jpg%3Fv%3D1690905055&w=256&q=75"
+                        alt="" height="130px" width="90px">
+                    <p class="mt-2">Nude Edition Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1499
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1996</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1199</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="mt-1"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FDateNightMakeupkit-1.jpg%3Fv%3D1695397255&w=256&q=75"
+                        alt="" height="130px" width="100px">
+                    <p class="mt-2">Date Night Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1599
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">2193</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1299</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box position absolute">
+
+                    <img class="mt-1"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fcombo-image.jpg%3Fv%3D1636991116&w=256&q=75"
+                        alt="" height="130px" width="100px">
+                    <p class="mt-2">4-in-1 Makeup Set</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        899
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1146</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>719</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    REFER YOUR FRIENDS
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class="mt-3 d-flex justify-content-center">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F20395dda-05f5-4bdf-8015-a795d7c22678.jpg&w=1920&q=75"
+                    class="d-block  rounded" style="width: 95%;" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    HOT DEALS
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class=" row d-flex mt-3 m-0 p-0">
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://d32baadbbpueqt.cloudfront.net/Homepage/9b92bb73-edd9-4b40-84be-c0a3f9c32d7c.gif"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/a376e8d4-5e02-4dfb-b649-3dc4807499c5.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://d32baadbbpueqt.cloudfront.net/Homepage/062d29c6-31e6-4bee-861a-3b8f47c2bab4.gif"
+                        width="260px" alt="">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div id="background">
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name text-light fw-bold">
+                    JUST-IN
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_e241e84d-810a-46ab-abe9-c50f157061a8.jpg%3Fv%3D1680367311&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Vineeta's Favourite Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        2999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">3894</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>2399</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F464576762-launch_sugar-la-la-love-18hr-liquid-lipstick-wbg-powered-by-images_01.jpg%3Fv%3D1688227587&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Nude Edition Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1499
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1996</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1199</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FVday-Kit---Powered-by-images-_design__1.jpg%3Fv%3D1708443925&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">Date Night Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1599
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">2193</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1299</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box position absolute">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FSibling-Love-Limited-Edition-Gift-Set---WBG.jpg%3Fv%3D1700063053&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">4-in-1 Makeup Set</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        899
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1146</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>719</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    LA LA LOVE 18HR LIQUID LIPSTICK | 6 NEW SHADES
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class="mt-3 d-flex justify-content-center">
+                <iframe class="rounded-3" width="700" height="250" src="https://www.youtube.com/embed/qbbvMX7S7tM"
+                    title="Just Dropped: New Shades Of SUGAR La La Love 18HR Liquid Lipstick 💖" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    TOP PICKS OF THE WEEK
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class=" row d-flex mt-3 m-0 p-0">
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/c84926c4-8914-484e-8ad5-649fd1980d1f.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/cd5c828f-a59f-4342-8955-25c7a9f7c70d.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/8b810378-baea-4a92-a85d-2e4412ad5c4b.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div id="background">
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name text-light fw-bold">
+                    JUST-IN
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FRageForCoveragePDPImagesparent1stcard.jpg%3Fv%3D1685636215&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Vineeta's Favourite Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        2999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">3894</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>2399</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FAirKissPowderPoweredByImagesArtboard1.jpg%3Fv%3D1644421218&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Nude Edition Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1499
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1996</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1199</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FValue-Sets---WBG-Listing_1_9756c528-c984-4323-af6f-4fe3239ee42c.jpg%3Fv%3D1694187870&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">Date Night Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1599
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">2193</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1299</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box position absolute">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F537282461-maximeyes-mat-value-set-wbg3.jpg%3Fv%3D1694619990&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">4-in-1 Makeup Set</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        899
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1146</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>719</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-1">
+            <div class="border border-danger" id="line"></div>
+            <div class="name fw-bold">
+                NEWLY LAUNCHED
+            </div>
+            <div class="border border-danger" id="line"></div>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner mt-3 rounded">
+                <div class="carousel-item active">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fb90c025f-22a4-4f30-bfbf-8a045fdf023e.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F7a6f082b-d4ba-4b93-93b7-aa79cc63d877.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div id="background">
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name text-light fw-bold">
+                    SKINCARE BASICS
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparentpage_f3c8f153-1e62-4a22-bc0c-da67c39a4529.jpg%3Fv%3D1685635643&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Vineeta's Favourite Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        2999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">3894</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>2399</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-light border border-danger box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fmoisturiser.jpg%3Fv%3D1626968292&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Nude Edition Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1499
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1996</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1199</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    SUGAR BEAUTY BLOG
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+            <div class=" row d-flex mt-3 m-0 p-0">
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/79f6cb09-9676-4973-bfad-5812deec472c.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/9e38f392-ad5f-47b2-8f1a-65f7b8f7d7b7.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/ba3ccda6-f7ef-4618-a20f-a25094a58de3.jpg&w=1920&q=75"
+                        width="260px" alt="">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="background">
+            <div class="d-flex justify-content-center mt-2">
+                <div class="border border-danger" id="line"></div>
+                <div class="name fw-bold">
+                    MERCH STATION
+                </div>
+                <div class="border border-danger" id="line"></div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 position-relative mt-3">
+
+                <div class="bg-white shadow box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FLaptop-Bag-WBG-1_d9b0a265-b8a5-4a24-a8f8-7d5b0f51788b.jpg%3Fv%3D1675182065&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Vineeta's Favourite Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        2999
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">3894</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>2399</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-white shadow box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FD2C---Merch---Laptop-Sleeves_1.jpg%3Fv%3D1625240618&w=256&q=75"
+                        alt="" height="100px" width="90px">
+                    <p class="mt-4">Nude Edition Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1499
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1996</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1199</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-white shadow box">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg%3Fv%3D1624532788&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">Date Night Makeup Kit</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        1599
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">2193</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>1299</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+                <div class="bg-white shadow box position absolute">
+
+                    <img class="fourth"
+                        src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-money-maker-envelope-wallet-black-28490557358163.jpg%3Fv%3D1624954703&w=256&q=75"
+                        alt="" height="100px" width="100px">
+                    <p class="mt-4">4-in-1 Makeup Set</p>
+                    <p class="ruppee">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm fw-bold"></i>
+                        899
+                        <span class="mrp">MRP
+                            <i class="fa-solid fa-indian-rupee-sign fa-xs"></i><span class="mrp1">1146</span>
+                        </span>
+                    </p>
+
+                    <p class="btnp">
+                        <button style="font-size:6.5px; border-radius: 5px;">PRICE</button>
+                        <span class="btnmrp">
+                            <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>719</span>
+                    </p>
+                    <p id="heartline d-flex">
+                    <div class="heart d-inline border border-black">
+                        <i class="fa-regular fa-heart text-dark fa-xs"></i>
+                    </div>
+                    <span>
+                        <button id="choose">CHOOSE
+                            ITEMS</button></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <br> <br> <br>
+
+        <div class="hr">
+            <hr class="ms-3">
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p>READ MORE ABOUT SUGAR COSMETICS</p>
+                        <!-- <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24"
+                            aria-hidden="true" style="color:var(--secondary-color)">
+                            <path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"></path>
+                        </svg> -->
+                    </button>
+
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong><span
+                                style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) ">Enhance
+                                your beauty looks with SUGAR COSMETICS</span></strong> <br> <br>
+                        <span style="font-size: 7.2px; font-family: 'Arial',sans-serif; color: rgb(174, 174, 174); "
+                            class="small">Your search for
+                            a makeup and beauty range that’s cruelty-free, high on style, and even higher on performance
+                            ends here at SUGAR Cosmetics! SUGAR makeup stands for striking formulas that perfectly suit
+                            every Indian skin tone, extremely rich colour payoff, along with a unique and incredible
+                            range of products that stand the test of time. This hugely popular range of premium colour
+                            cosmetics and beauty products are crafted in state-of-the-art facilities across Germany,
+                            Italy, India, USA, and Korea. The clutter-breaking 450+ makeup products are skillfully
+                            wrapped in a signature low-poly mosaic designed packaging that is bursting with colour and
+                            is sure to complement the sweet and sassy side of you.</span><br> <br>
+
+                        <span style="font-size: 7.2px; font-family: 'Arial',sans-serif; color: rgb(174, 174, 174); ">The
+                            chart-topping makeup & beauty range is spread across categories like Lip makeup, Eye makeup,
+                            Face makeup, Nail paints and Skin care. The best-selling beauty products in India extend
+                            from
+                            the long lasting lipsticks to creamy lip crayons, lip primers to eyebrow definers,
+                            foundation
+                            stick with an inbuilt brush to cushion BB compacts, setting mist to makeup cleansing water.
+                            SUGAR has pioneered the trend shift towards “mattes'' with its cult-favourite range of Matte
+                            Liquid Lipsticks and equally popular Matte Eyeliners. Some of the recent innovations like
+                            the
+                            ultra-luxe range of lipsticks called Mettle, Jelly Highlighters, a range of face makeup
+                            including colour correctors, highlighters, bronzers and blushes in a stick format, have
+                            created
+                            waves in the makeup market. Say hello to SUGAR’s newest skincare category with our range of
+                            Sheet Masks, Clay Masks, Eye Creams and a ground-breaking hyaluronic acid and Vitamin C
+                            skincare
+                            range and so much more. </span><br><br>
+
+                        <span class="small">So get ready to dive into the world of SUGAR Cosmetics and rule the world,
+                            one look at a time! </span> <br><br>
+
+                        <strong><span
+                                style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) "> Look
+                                your glamorous best with Exclusive SUGAR Makeup Collection!</span> </strong> <br> <br>
+                        <span class="small">Whether you are a makeup connoisseur or a budding enthusiast, it is easy to
+                            be overwhelmed in
+                            the sea of beauty products in India. But with SUGAR Cosmetics, you can put your search for
+                            the
+                            perfect makeup collection to rest. Since its inception, SUGAR has been working with an aim
+                            to
+                            create a high-quality yet affordable range of products to complement the iconic Indian
+                            beauty.
+                            Not only that, you can shop for all these cosmetics online without going through a tiring
+                            process of finding a cosmetic store that will cater to your needs.</span><br><br>
+
+                        <span class="small">Makeup is not just a necessity; it’s a statement that says we are beautiful,
+                            but a dash of
+                            lipstick every once in a while makes us feel sexy. SUGAR Cosmetics truly keeps up to our
+                            promise
+                            to have your back to make heads turn wherever you go. Make sure you own a beauty kit with
+                            products that are exclusively created and recommended for you by beauty experts, but most of
+                            all
+                            – own a makeup that makes you feel confident in your own skin. Your selection of cosmetics
+                            to
+                            build your makeup stash, is sure to provide you with an ensemble that is on-trend and a
+                            reflection of you and your style. This makeup collection is everything you need to look
+                            stunning
+                            while you’re on the go; and you might just fall in love with yourself all over
+                            again.</span><br><br>
+
+                        <strong><span
+                                style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) "> How
+                                to Choose the Right Makeup & Cosmetics?</span></strong><br><br>
+                        <span class="small">While we guide you through the best picks to make your makeup kit of this stellar range, here
+                        are a few things to keep in mind while choosing the right products for you. Number one,
+                        understand your skin texture, skin tone, and skin undertone. For texture – If you have dry skin,
+                        opt for crème based, hydrating products like liquid foundations, cushion compacts that are
+                        infused with moisturizing ingredients like aloe vera, glycerin and if you have oily skin, pick
+                        non-greasy, powder-based makeup that has oil-absorbing ingredients like kaolin clay. SUGAR
+                        Cosmetics stands strong to the promise of inclusivity in our makeup range and provides a
+                        plethora of shades that suit all skin tones and undertones. While you are spoiled for choice
+                        when shopping online at SUGAR Cosmetics with makeup products that are trending, and hues that
+                        are raging the makeup charts, never forget to own your style and be unapologetically yourself!</span> <br> <br>
+
+                        <strong><span
+                            style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) ">SUGAR’s Lipstick Range: Let your lips steal the show!</span></strong> <br> <br>
+                        <span class="small">A lipstick is the sassiest makeup product a girl can own. With SUGAR lipsticks, now you can
+                        flaunt your pout and grab eyeballs wherever you go. Our lipsticks are rich pigmented and loaded
+                        with natural ingredients to ensure your lips are healthy and happy, always. You can now select
+                        from various lip makeup products like lip crayons, lacquers, lip gloss and lip liners in matte,
+                        creamy matte and glossy finish. With matte lip colours being all the rage, you can shop our
+                        delectable range of Matte as Hell crayon lipstick mini set where you can select any 3 lip
+                        colours of your choice. In case you are looking for a smudge proof lipstick, our Smudge Me Not
+                        liquid lipstick is sure to become your lip’s best friend. Just a single coat and you are done
+                        for the day and night too. This kiss-proof range ensures your lips remain gorgeously tainted
+                        while you eat, drink and kiss your heart out! Available in 52 shades, this lip line is a riot of
+                        colours and choosing one might be tough. With an endless range of lipstick shades and textures
+                        to choose from, you are sure to find your perfect SUGAR lipstick for every mood and occasion.</span> <br> <br>
+
+                        <span class="small">To get a smooth application for your lipstick and make it last longer, begin with a lip primer
+                        like the SUGAR Seal The Show Lip Primer. Start with defining your pout with the SUGAR Lipping On
+                        The Edge Lip Liner that gives you fuller, matte looking lips. There is an abundance of choice
+                        for the type of lipstick, the texture and finish that you could choose froin. Opt for a Liquid
+                        Lipstick with a super matte finish and long-lasting power like the SUGAR Smudge Me Not Liquid
+                        Lipstick, or an easy-to-use crayon lipstick like the SUGAR Matte As Hell Crayon Lipstick with a
+                        comfort matte finish that skips the need of a lip liner. You will be showered with choices from
+                        a classic bullet lipstick like the SUGAR Nothing Else Matter Longwear Lipstick, to twist up
+                        oval-shaped slim bullet lipstick like the SUGAR Matte Attack Transferproof Lipstick ensuring
+                        precise and proper application and coverage. You can choose from a super matte texture to a
+                        velvety matte feel, and crème, metallic or gloss finish lipsticks from SUGAR’S incredible lip
+                        makeup collection. Try the new Wonder Woman Lipsticks that are 100% vegan, and your lipstick
+                        shades collection will be incomplete without a classy red and a perfect nude that appropriately
+                        complements your skin colour. Other must-have lipstick colours are a popping pink and purple for
+                        parties, a soft mauve and pink or earthy browns for an office look or day dates, and some glossy
+                        lipstick shades and metallic lipstick colours for the day you want to glam it up. As a beginner,
+                        we would recommend your go-to lipstick should definitely be a subtle shade (soft pink or nude
+                        brown lipstick colour).</span><br><br>
+
+                        <strong><span
+                            style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) ">SUGAR Eye Makeup range: Check out an exciting collection of kajals, eyeliners & mascaras!</span></strong> <br><br>
+                        <span class="small">With SUGAR’s eye makeup range, you can now play with dramatic eyeliners, deeply tainted Kajals,
+                        vibrant eye shadows and much more. If you are looking for a Kajal that actually delivers what it
+                        says, our Kohl Of Honour Intense Kajal-01 Blackout black is for you. This extreme-wear,
+                        waterproof kajal is smudge free, transfer resistant and stays on for 12 hours straight. Eye
+                        makeup is incomplete without an eye liner and the Wingman Waterproof Microliner-01 I’ll be black
+                        is a dream come true eyeliner with matte finish. It is smudge proof, deeply pigmented and
+                        promises a stay of up to 12 hours. Next try our Blend the Rules Eyeshadow Palette, an iconic
+                        trio of warm neutrals to create smokey, mauve and nude effects on your eyes. Finish your eye
+                        makeup with Lash Mob Limitless Mascara-01 Black with a Bang. The creamy mascara separates,
+                        defines and combs through your lashes giving you that defined long lash look.</span>
+
+                        <strong><span
+                            style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) "> SUGAR Face Makeup range: One-stop cosmetics shop for a flawless complexion</span></strong> <br> <br>
+                        <span class="small"> Now, looking like a million bucks is easy with SUGAR’s versatile face makeup range. All you need
+                        is long-wear foundations, setting powders and professional makeup brushes and some makeup skills
+                        to transform you into a glitzy goddess. Great makeup requires a flawless base and our Ace of
+                        Face Foundation Stick stands the test of time. Quite literally! This creamy, rich foundation
+                        feels like a second skin and offers 22 different shades for light, medium and dark complexion to
+                        match your skin tone. You can shop for these beauty products online and much more like the
+                        contour De Force Mini Blush, Dream Cover SPF15 Mattifying Compact and Bling Leader Illuminating
+                        Moisturiser from our website.</span><br><br>
+
+                        <strong><span
+                            style="font-size: 8px; font-family: 'Arial',sans-serif; color:rgb(158, 158, 158) ">Step-by-Step Guide to Ace your Makeup Routine</span></strong><br><br>
+                       <span class="small">Prepare yourself to play with makeup and find the look that shouts ‘YOU!’ Take a read through a
+                        quick guide to the types of makeup products that you can opt for while shopping online at SUGAR.</span> 
+
+                        Prep: To begin with, always start putting your makeup on a fresh and clean canvas. This means
+                        that you should always wash your face and clear out any residue with a good cleansing water or
+                        lotion to start right like the SUGAR Swipe Right Cleansing Water. For a true glow-from-within
+                        look, make sure you follow this up with a sheet mask that helps your skin feel supple and
+                        smooth. Once the face is set, choose from SUGAR’s collection of face primers, which will help
+                        keep your makeup in place for a long period of time. A little goes a long way with a pea-sized
+                        amount of primer that acts as a skin-perfector, creating the definition of a flawless base
+                        whilst blurring out wrinkles and fine lines. According to your skin time, you can choose a
+                        mattifying face primer or a hydrating face primer.
+                        Build your makeup routine: Start your face makeup by covering any imperfections, blemishes or
+                        skin discolourations by using the SUGAR Magic Wand Waterproof Concealer and the SUGAR Face FWD
+                        >> Colour Corrector sticks. Use the two makeup products to cover your under eye dark circles,
+                        hyperpigmentation, blemishes, redness, scars and spots. Dot in the product on your face gently
+                        and blend in using a light hand. After creating a flawless base, apply your foundation in the
+                        shade that’s closest to your skin tone. The best foundation type you could opt for is the
+                        foundation cream that comes in a stick format with an attached blending brush at the other end,
+                        making it handy and easy to use like the SUGAR Ace Of Face Foundation Stick. After creating your
+                        picture-perfect canvas, finish your base by dabbing some compact or loose powder to set it. For
+                        those days when you want to go light on your face makeup, simply use a concealer, followed with
+                        a BB cream like the SUGAR Goddess Of Flawless SPF30+ BB Cream or SUGARPower Clay SPF20 BB
+                        Cushion that suits your skin tone and set it in with the SUGAR Dream Cover SPF15 Mattifying
+                        Compact.
+                        Contour and define your features: It’s now time to contour your face, get that perfect chiseled
+                        look. Create a defined jawline, highlight your best features and give yourself those flushed
+                        cheeks. Use the SUGAR Contour De Force Mini Bronzer or the SUGAR Face FWD >> Contour Stick under
+                        your cheekbones to sculpt and define. Apply small amounts of your bronzer along the hollow till
+                        your hairline and on the sides of your nose to achieve a defined look. You can also apply it
+                        under your jawline for a completely sculpted look. For a brilliant flush of colour use a blush
+                        brush and apply the SUGAR Contour De Force Mini Blush to the apples of the cheek. Amp up the
+                        shine and glow on your skin by applying the SUGAR Contour De Force Mini Highlighter. Apply your
+                        highlighter anywhere you want an intense glow, like the top of your cheekbones, over or under
+                        browbones, down the bridge of the nose, on the cupid's bow of your lips and even the inner
+                        corner of the eyes.
+                        Flaunt beautiful eye makeup: Now let’s talk about creating an impeccable ‘eye candy’! Start your
+                        eye makeup by defining your eyebrow. Use the SUGAR Arch Arrival Brow Definer in the right shade
+                        that matches the shade of your eyebrow hair. Define and fill in your eyebrows in short strokes,
+                        and then comb them out with the attached brush to achieve naturally groomed or strikingly bold
+                        eyebrows. Next, win over your eye game by choosing a richly pigmented and blendable eyeshadow
+                        palette that comes with a mirror and dual-ended applicator. Your eye shadow kit should include
+                        matte eyeshadow shades in nudes and deeper hues, metallic and foil powders. You can choose any
+                        of your fave from the SUGAR Blend The Rules Eyeshadow Palette or the new Wonder Woman eyeshadow
+                        palettes that has a mix of matte, shimmer and high-shine foil finish eyeshadow shades and
+                        bronzer, blush to add definition.
+                        Pretty up your nails: Your makeup kit is never complete without a range of nail polish colours.
+                        Let your fingers do the talking with SUGAR’s nail polish range called Tip Tac Toe Nail Lacquers
+                        that are sure to keep your tips on-point! Choose your favourite nail paint colours from a wide
+                        range of glossy, matte or shimmer nail lacquers. The chip-free, streak-free formulation, quick
+                        dry formula and specially crafted ergonomic applicator checks on all your nail paint woes. Get
+                        experimental and creative with nail polish trends and nail art fads by choosing the best fits
+                        for you from our wide range of nail paintcolours.
+                        Buy the best of SUGAR Beauty Kits & Makeup Value sets that are perfect to indulge!
+                        Worried about what to pack for your next summer vacay trip or looking for all-in-one makeup sets
+                        to glam for a wedding? Choose from an assemblage of gorgeous beauty kits and makeup combos like
+                        the Liquid Lipstick + Kohl Value set and Eyeliner + Kajal Value set or from super saver combo
+                        packs like the Lip Crayon value set and Prepped Up Combo face mask sheets. Indulge in glowing
+                        skin beauty set or beginner-friendly makeup kit that includes everything for you to look
+                        fabulous. Pick our exclusive launch Pride Edition mini lipstick sets in rainbow-themed packaging
+                        are all-out bold, loud and bright in every way.
+
+                        SUGAR’s new skincare range: Products that add glow and keep your skin healthy!
+
+                        Makeup looks great when complemented with smooth skin and a natural glow. SUGAR Cosmetics brings
+                        for you an exclusive 100% vegetarian and cruelty-free skin care range that will pamper and
+                        nourish your skin from within. Grab your SUGAR products from your nearest cosmetic store or
+                        order them online in India. From refreshing face masks, illuminating moisturizers, face setting
+                        mists and makeup remover, we have it all covered for you. Packed with the goodness of vitamin C,
+                        our Citrus Got Real range will cover all your skin concerns like blemishes, dryness and dullness
+                        to give you skin that is hydrated, glowing and healthy. For dull, dehydrated and dry skin opt
+                        for unique Hyaluronic acid-based skincare packed with great skin loving ingredients. The SUGAR
+                        Aquaholic skincare range works magic and provides instant hydration to your skin while relaxing
+                        your skin. For those TLC sessions during the weekends, you can choose from a wide range of SUGAR
+                        face masks that will rejuvenate your skin.
+
+                        Some skin TLC: Removing your makeup, and continuing with a cleansing, toning and moisturizing
+                        routine is mandatory before you retire for the day. This keeps your skin healthy and prevents
+                        premature ageing of skin. Use gentle makeup cleansing water to wipe out your waterproof makeup,
+                        and then follow the Korean beauty care routine of double cleansing. This means you use an
+                        oil-based cleanser to wash your face and clear out any makeup residue, dirt and grime and follow
+                        with a gentle water-based face wash after that. Proceed with a toner or facial essence to refine
+                        pores and balance skin pH, use a pore cleansing mask and then a rejuvenating Korean sheet mask.
+                        Post that you can hydrate your skin using an overnight sleeping face mask. Your perfect picks
+                        for a quick skincare routine would be SUGAR Swipe Right Cleansing Water, following with the
+                        SUGAR Power Clay 3-min Pore Cleansing Mask or Power Clay Peel Off Mask. You can also use your
+                        favourite from SUGAR’s wide range of Sheet Masks. Then end this routine with the SUGAR Aquaholic
+                        Overnight Water Mask. This routine helps to avoid clogging of pores and ensures healthy, supple
+                        and fresh-looking skin.
+
+                        LET’S STAY IN TOUCH
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+
+
+
+
+
+</body>
+
+</html>
