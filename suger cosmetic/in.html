@@ -23,13 +23,28 @@
         .container-fluid {
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
 
         #back {
             background-image: url(https://d32baadbbpueqt.cloudfront.net/Homepage/f2e2157b-1c8d-4885-9c59-8b4235bb18bd.png);
             /* height: 250px; */
-            
-            
+
+
+        }
+
+        #next,
+        #prev {
+            margin-top: 180px;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+
+        #img1,#img2,#img3,#img4 {
+            width: 230px;
+            height: 230px;
+            margin: 20px;
+            /* margin: 50px; */
         }
     </style>
 </head>
@@ -237,7 +252,8 @@
                 </div>
                 <hr class="hr" style="width: 3%; opacity: 1; border-top: solid red; color: red;">
             </div>
-            <div id="back" class="text-light d-flex justify-content-between d-flex justify-content-center" style="border-radius: 10px;margin-left: 40px; width: 95%;">
+            <div id="back" class="text-light d-flex justify-content-between d-flex justify-content-center"
+                style="border-radius: 10px;margin-left: 40px; width: 95%;">
                 <div class="col-4 p-lg-5 rounded">
                     <img src="./Screenshot 2024-04-05 232314.png" alt="">
                 </div>
@@ -251,14 +267,338 @@
 
 
         <div>
-            <div id="back" class="text-light d-flex justify-content-center" style="height: 500px;" >
-                <hr class="hr " style="width: 3%; margin-top: 38px; opacity: 1; border-top: solid red; color: red;">
-                <p class="text-light d-flex  fs-5 px-3 mt-4">BESTSELLERS</p>
-                <hr class="hr " style="width: 3%;margin-top: 38px; opacity: 1; border-top: solid red; color: red;">
+            <div id="back" style="height: 600px;">
+
+                <div class="text-light d-flex justify-content-center">
+                    <hr class="hr " style="width: 3%; margin-top: 38px; opacity: 1; border-top: solid red; color: red;">
+                    <p class="text-light d-flex  fs-5 px-3 mt-4">BESTSELLERS</p>
+                    <hr class="hr " style="width: 3%;margin-top: 38px; opacity: 1; border-top: solid red; color: red;">
+                </div>
+
+                <div class="">
+                    <div class="container-fluid d-flex justify-content-center text-center gap-4" id="img-slider">
+
+                        <div>
+                            <div class="btn btn-light rounded-5 fs-3 " id="prev"><i
+                                    class="fa-solid fa-angle-left m-1"></i></div>
+                        </div>
+
+                        <div class="border border-light rounded bg-white">
+                            <div>
+                                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F370205924-01_1aef1c2e-8e41-42a2-89c5-70dab3b356ac.jpg%3Fv%3D1698238462&w=256&q=75"
+                                    alt="" id="img1" width="300px" height="">
+                            </div>
+                            <p class="text-dark" id="title1">Matte As Hell Crayon Lipstick Minis Set of 3</p><br>
+                            <span class="h4 fs-4 text-dark" id="price1">₹999.00</span><span
+                                class=" p-2 text-decoration-line-through  text-secondary-emphasis">MRP
+                                ₹1799.00</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-sack-dollar mt-1  pe-2 fs-6"></i>
+                                <p class="text-dark " id="mrp1">₹799.00
+                                </p>
+                            </div>
+
+                            <div class="d-flex">
+
+                                <div class="btn text-dark border border-dark "
+                                    style="width: 20%; height: 40px; margin: 8px; padding-top: 8px;"><i
+                                        class="fa-regular fa-heart h4"></i> </div>
+                                <div class="btn btn-dark"
+                                    style="height: 40px;width: 70%; margin: 8px; padding-top: 5px; " id="car1">Cart</div>
+                            </div>
+
+                        </div>
+
+                        <div class="border border-light rounded bg-white">
+                            <div>
+                                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG2_aed576d3-066c-42e7-b45b-ecdefb75ad5f.jpg%3Fv%3D1708867229&w=256&q=75"
+                                    alt="" id="img2" width="300px" height="">
+                            </div>
+                            <p class="text-dark" id="title2">Smudge Me Not Mini Liquid Lipstick Set of 4 - Power Up Your
+                                Pout</p><br>
+                            <span class="h4 fs-4 text-dark" id="price2">₹799.00</span><span
+                                class=" p-2 text-decoration-line-through  text-secondary-emphasis">
+                                MRP ₹999.00</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-sack-dollar mt-1  pe-2 fs-6"></i>
+                                <p class="text-dark " id="mrp2">₹639.00
+                                </p>
+                            </div>
+
+                            <div class="d-flex">
+
+                                <div class="btn text-dark border border-dark "
+                                    style="width: 20%; height: 40px; margin: 8px; padding-top: 8px;"><i
+                                        class="fa-regular fa-heart h4"></i> </div>
+                                <div class="btn btn-dark"
+                                    style="height: 40px;width: 70%; margin: 8px; padding-top: 5px;" id="car2">Cart</div>
+                            </div>
+
+                        </div>
+                        <div class="border border-light rounded bg-white">
+                            <div>
+                                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75"
+                                    alt="" id="img3" width="300px" height="">
+                            </div>
+                            <p class="text-dark" id="title3">Ace Of Face Foundation Stick - 15 Cappuccino (Light Cool -
+                                Undertone)</p><span>11 shades</span><br>
+                            <span class="h4 fs-4 text-dark" id="price3">₹999.00</span><span
+                                class=" p-2 text-decoration-line-through  text-secondary-emphasis">₹1199.00</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-sack-dollar mt-1  pe-2 fs-6"></i>
+                                <p class="text-dark " id="mrp3">₹799.00
+                                </p>
+                            </div>
+
+                            <div class="d-flex">
+
+                                <div class="btn text-dark border border-dark "
+                                    style="width: 20%; height: 40px; margin: 8px; padding-top: 8px;"><i
+                                        class="fa-regular fa-heart h4"></i> </div>
+                                <div class="btn btn-dark"
+                                    style="height: 40px;width: 70%; margin: 8px; padding-top: 5px;" id="car3">Cart</div>
+                            </div>
+
+                        </div>
+                        <div class="border border-light rounded bg-white">
+                            <div>
+                                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F521737983-parent-1st-card.jpg%3Fv%3D1690905085&w=256&q=75"
+                                    alt="" id="img4" width="300px" height="">
+                            </div>
+                            <p class="text-dark" id="title4">Maximeyes Drama Magnetic <br>Lashes & Eyeliner - 01 Genuine
+                            </p><span>3 shades</span><br>
+                            <span class="h4 fs-4 text-dark" id="price4">₹699.00</span><span
+                                class=" p-2 text-decoration-line-through  text-secondary-emphasis">₹999.00</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-sack-dollar mt-1  pe-2 fs-6"></i>
+                                <p class="text-dark " id="mrp4">₹799.00
+                                </p>
+                            </div>
+
+                            <div class="d-flex">
+
+                                <div class="btn text-dark border border-dark "
+                                    style="width: 20%; height: 40px; margin: 8px; padding-top: 8px;"><i
+                                        class="fa-regular fa-heart h4"></i> </div>
+                                <div class="btn btn-dark"
+                                    style="height: 40px;width: 70%; margin: 8px; padding-top: 5px;" id="car4">Cart</div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="btn btn-light rounded-5 fs-3" id="next"><i
+                                    class="fa-solid fa-angle-right m-1"></i></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
             </div>
+
         </div>
     </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+    let arr = [
+
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fa_00b52826-78d8-4da0-aba1-fbcbfb39dc33.jpg%3Fv%3D1688228539&w=256&q=75",
+            title: "La La Love 18HR Liquid Lipstick - Set of 3",
+            price: "₹799.00",
+            mrp: "₹999.00",
+            cart: "Buy Now"
+            
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparent1stcard_1_7aa4b700-2b5f-4212-8b56-86889ab8a390.jpg%3Fv%3D1689262362&w=256&q=75",
+            title: "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            price: "₹849.00",
+            mrp: "₹679.00",
+            cart: "cart"
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMatteAttackTransferproofLipstickPDPimagesFinalparent1stcard.jpg%3Fv%3D1682957359&w=256&q=75",
+            title: "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            price: "₹749.00",
+            mrp: "₹599.00",
+            cart: "cart",
+        },
+
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75",
+            title: "Ace Of Face Foundation Stick - 15 Cappuccino (Light Cool - Undertone)",
+            price: "₹999.00",
+            mrp: "₹799.00",
+            cart: "Buy Now"
+
+        }
+
+        , {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg%3Fv%3D1657123108&w=256&q=75",
+            title: "Contour De Force Eyes And Face Palette - 01 - Warm Win",
+            price: "₹1099.00",
+            mrp: "₹879.00",
+            cart: "cart"
+        }
+
+        , {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FKohl-Of-Honour-Intense-Kajal-PDP-images-Parent-page.jpg%3Fv%3D1679673305&w=256&q=75",
+            title: "Kohl Of Honour Intense Kajal - 01 Black Out (Black)",
+            price: "₹249.00",
+            mrp: "₹199.00",
+            cart: "cart"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FParent-Page_ac0201bb-8f51-447c-b6e0-4404786076a2.jpg%3Fv%3D1680364145&w=256&q=75",
+            title: "Nothing Else Matter Longwear Lipstick - 01 Browning Glory ",
+            price: "₹599.00",
+            mrp: "₹479.00",
+            cart: "Buy Now"
+
+        }
+
+        ,
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg%3Fv%3D1619114695&w=256&q=75",
+            title: "Goddess Of Flawless BB Cream - 07 Vanilla Latte (Fair)",
+            price: "₹799.00",
+            mrp: "₹639.00",
+            cart: "Buy Now"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fa_00b52826-78d8-4da0-aba1-fbcbfb39dc33.jpg%3Fv%3D1688228539&w=256&q=75",
+            title: "La La Love 18HR Liquid Lipstick - Set of 3",
+            price: "₹799.00",
+            mrp: "₹999.00",
+            cart: "cart"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparent1stcard_1_7aa4b700-2b5f-4212-8b56-86889ab8a390.jpg%3Fv%3D1689262362&w=256&q=75",
+            title: "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            price: "₹849.00",
+            mrp: "₹679.00",
+            cart: "Buy Now"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMatteAttackTransferproofLipstickPDPimagesFinalparent1stcard.jpg%3Fv%3D1682957359&w=256&q=75",
+            title: "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            price: "₹749.00",
+            mrp: "₹599.00",
+            cart: "cart"
+
+        },
+
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75",
+            title: "Ace Of Face Foundation Stick - 15 Cappuccino (Light Cool - Undertone)",
+            price: "₹999.00",
+            mrp: "₹799.00",
+            cart: "Buy Now"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg%3Fv%3D1657123108&w=256&q=75",
+            title: "Contour De Force Eyes And Face Palette - 01 - Warm Win",
+            price: "₹1099.00",
+            mrp: "₹879.00",
+            cart: "cart"
+
+        }
+
+        , {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FKohl-Of-Honour-Intense-Kajal-PDP-images-Parent-page.jpg%3Fv%3D1679673305&w=256&q=75",
+            title: "Kohl Of Honour Intense Kajal - 01 Black Out (Black)",
+            price: "₹249.00",
+            mrp: "₹199.00",
+            cart: "Buy Now"
+
+        },
+        {
+            img: "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FParent-Page_ac0201bb-8f51-447c-b6e0-4404786076a2.jpg%3Fv%3D1680364145&w=256&q=75",
+            title: "Nothing Else Matter Longwear Lipstick - 01 Browning Glory",
+            price: "₹599.00",
+            mrp: "₹479.00",
+            cart: "cart"
+
+        }
+    ]
+    let count = 0;
+    let n = arr.length
+
+    const ui = (count) => {
+        $("#title1").text(arr[count].title)
+        $("#img1").attr("src", arr[count].img)
+        $("#price1").text(arr[count].price)
+        $("#mrp1").text(arr[count].mrp)
+        $("#car1").text(arr[count].cart)
+
+        
+
+        $("#title2").text(arr[count + 1].title)
+        $("#img2").attr("src", arr[count + 1].img)
+        $("#price2").text(arr[count + 1].price)
+        $("#mrp2").text(arr[count + 1].mrp)
+        $("#car2").text(arr[count].cart)
+
+
+        $("#title3").text(arr[count + 2].title)
+        $("#img3").attr("src", arr[count + 2].img)
+        $("#price3").text(arr[count + 2].price)
+        $("#mrp3").text(arr[count + 2].mrp)
+        $("#car3").text(arr[count].cart)
+
+
+        $("#title4").text(arr[count + 3].title)
+        $("#img4").attr("src", arr[count + 3].img)
+        $("#price4").text(arr[count + 3].price)
+        $("#mrp4").text(arr[count + 3].mrp)
+        $("#car4").text(arr[count].cart)
+
+
+    }
+
+    $("#next").click(() => {
+
+        if (count <= n - 1) {
+            count += 1
+        }
+        else {
+            count = 0
+        }
+
+
+        ui(count)
+    })
+
+
+    $("#prev").click(() => {
+
+        if (count >= 2) {
+            count -= 2
+        }
+        else {
+            count = n - 1
+        }
+
+
+        ui(count)
+    })
+
+    ui(0)
+</script>
 
 </html>
