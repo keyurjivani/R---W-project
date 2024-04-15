@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 #img-back{
     background-image: url('./1.jpg');
     width: 100%;
@@ -9,4 +13,20 @@
 
   /* background-color: aqua; */
   
+}
+.btn1{
+  background-color: rgb(189, 215, 230);
+  color: rgb(0, 106, 255);
+  border: none;
+}
+@media only screen and (max-width: 800px) {
+  #up-down {
+    background-color: lightblue;
+    position: absolute;
+    /* top: 111%;
+    right: 100%; */
+    justify-content: center;
+    text-align: center;
+  }
+
 }
