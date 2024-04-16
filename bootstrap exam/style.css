@@ -33,7 +33,7 @@ a:hover{
     text-align: center;
   }
   .scroll{
-    position: absolute;
+    position: relative;
     top: 160%;
 
   }
