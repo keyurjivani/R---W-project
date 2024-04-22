@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: black; color: aliceblue; ">
+    <div id="todo-app">
+        <h1 style="text-align: center;">My To-Do List</h1>
+        <form id="addTaskForm" style="text-align: center;">
+            <input type="text" id="taskInput"  placeholder="Enter new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="taskList" style="margin-left: 480px;">
+            <!-- Task items will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
